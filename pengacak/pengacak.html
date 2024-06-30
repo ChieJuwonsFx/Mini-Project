@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengacak</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Pengacak</h1>
+        <form id="pengacak-form" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="items" class="text-lg font-medium">Masukkan Item (pisahkan dengan koma):</label>
+                <input type="text" id="items" placeholder="Contoh: Apel, Pisang, Jeruk" class="p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Acak</button>
+        </form>
+        <div id="result" class="mt-4 text-center text-xl font-bold"></div>
+    </div>
+    <script src="pengacak.js"></script>
+</body>
+</html>
