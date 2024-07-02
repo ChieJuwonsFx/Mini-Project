@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Konversi Mata Uang</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Aplikasi Konversi Mata Uang</h1>
+        <form id="currency-form" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="amount" class="text-lg font-medium">Masukkan Jumlah:</label>
+                <input type="number" id="amount" placeholder="Masukkan jumlah..." class="p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+            <div class="flex flex-col">
+                <label for="from" class="text-lg font-medium">Dari Mata Uang:</label>
+                <select id="from" class="p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                </select>
+            </div>
+            <div class="flex flex-col">
+                <label for="to" class="text-lg font-medium">Ke Mata Uang:</label>
+                <select id="to" class="p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500">
+                </select>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Konversi</button>
+        </form>
+        <div id="result" class="mt-4 text-center"></div>
+    </div>
+    <script src="konversi.js"></script>
+</body>
+</html>
